@@ -3,7 +3,7 @@ main {
     display: flex; 
     align-items: center;
     justify-content: center;
-    height: 400px;
+    height: 600px;
     background: cornflowerblue;
 } 
 
@@ -11,19 +11,16 @@ main {
 @media (min-width: 576px){
     .container {
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat (3,1fr);
+        grid-template-columns: 50% 50%;
+        grid-template-rows: repeat (2,1fr);
         grid-template-areas: 
             "main main"
-            "section-one section-two"
-            "section-three .";
+            "section-one"
+            "section-three";
     }
 
-    main {
-
-        background-color:  darkcyan;
-
-    }
+    
+   
 
     h2, p {
     
